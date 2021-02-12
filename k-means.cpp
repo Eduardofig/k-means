@@ -21,7 +21,7 @@ std::vector<cluster> k_means(std::vector<point> points, int num_centroids)
        c.centroid.x = rand();
        c.centroid.y = rand();
        vec_cl.push_back(c);
-    }
+    };
     int c_index, c_min_dist, c_compare_dist;
     for(point p : points) {
         c_index = 0, c_min_dist = (sqrt((p.x - vec_cl[0].centroid.x)^2 + (p.y - vec_cl[0].centroid.y)^2));
@@ -31,13 +31,13 @@ std::vector<cluster> k_means(std::vector<point> points, int num_centroids)
                 c_min_dist = c_compare_dist;
                 c_index = i;
             };
-        }
+        };
         vec_cl[c_index].points.push_back(p);
-    }
+    };
     return vec_cl;
 };
 
 int main(int argc, char *argv[])
 {
     return 0; 
-}
+};
