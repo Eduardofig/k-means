@@ -1,5 +1,5 @@
-#include <cstdlib>
-#include <iostream>
+#include<cstdlib>
+#include<iostream>
 #include<vector>
 #include<math.h>
 
