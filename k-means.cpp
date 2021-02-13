@@ -1,7 +1,7 @@
-#include<cstdlib>
-#include<iostream>
-#include<vector>
-#include<math.h>
+#include <cstdlib>
+#include <iostream>
+#include <vector>
+#include <math.h>
 
 typedef struct {
     int x, y;
@@ -10,6 +10,7 @@ typedef struct {
 typedef struct {
     point centroid;
     std::vector<point> points;
+    int sil_coeff;
 }cluster;
 
 std::vector<cluster> k_means(std::vector<point> points, int num_centroids)
